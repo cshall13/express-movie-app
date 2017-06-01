@@ -57,7 +57,6 @@ router.get('/movie/:id', (req,res)=>{
 			// use the request module to make an HTTP get request
 			var newMovieData = (JSON.parse(movieData));
 			var newCastData = (JSON.parse(castData));
-			console.log(newCastData);
 			// res.json(movieData);
 			// first arg: the view file
 			// second param: obj to send the view file

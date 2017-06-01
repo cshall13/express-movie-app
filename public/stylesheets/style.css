@@ -11,3 +11,11 @@ a {
 img{
 	max-width: 100%;
 }
+
+#single-movie .deets{
+	font-size: 20px;
+}
+
+#single-movie #desc-header{
+	font-size: 40px;
+}
