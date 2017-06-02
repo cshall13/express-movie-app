@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
   		res.render('movie_list', { 
   			movieData: movieData.results,
   			imageBaseUrl: imageBaseUrl,
-  			titleHeader: "Welcome to my movie app. These are now playing." 
+  			titleHeader: "Welcome to the movie app!These are now playing." 
   		});
 	});
 });
@@ -64,7 +64,7 @@ router.get('/movie/:id', (req,res)=>{
 				newMovieData: newMovieData,
 				newCastData: newCastData,
 				imageBaseUrl: imageBaseUrl,
-				titleHeader: `Welcome to the ${newMovieData.title} deets page.` 
+				titleHeader: `${newMovieData.title} Deets Page.` 
 			});
 		});
 	});

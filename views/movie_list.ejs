@@ -5,21 +5,22 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=VT323|Warnes" rel="stylesheet">
 
 
 </head>
-<body>
+<body class="movie-list">
 
 	<div class="container">
 		<div class="row">	
-			<div class="text-danger col-sm-12 text-center">
+			<div class="col-sm-12 text-center title">
 				<%= titleHeader %>
 			</div>
 
 			<div class="col-sm-6 col-sm-offset-3">
 				<form id="search-form" class="form-inline" action="/search"
 				method="post">
-					<input type="text" placeholder="Movie Title" name="searchString" />
+					<input type="text" placeholder="Enter a Movie Title" name="searchString" id="search-bar" />
 					<button type="submit" class="btn btn-primary">
 						Search!
 					</button>

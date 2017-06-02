@@ -8,7 +8,7 @@
 
 
 </head>
-<body id="single-movie">
+<body class="single-movie">
 
 	<div class="container">
 		<div class="row">
@@ -25,19 +25,27 @@
 					</button>
 				</form>
 			</div>
-			
+		</div>
 		<div class="row">
 			<div class="col-sm-4 poster">
 				<img src="<%= imageBaseUrl + newMovieData.poster_path %>" >
 			</div>
-				<div class="col-sm-6 deets">
-
+			<div class="col-sm-6 deets">
+				<div class="col-sm-12 overview">
+					<p><strong>Overview: </strong> </p>
 					<p><%= newMovieData.overview %></p>
+				</div>
+				<div class="col-sm-4 release">										
+					<p><strong>Release Date:</strong> </p>
 					<p><%= newMovieData.release_date %></p>
+				</div>
+				<div class="col-sm-6 cast">											
+					<p><strong>Cast: </strong></p>
 					<% for(let i = 0; i < 6; i++){ %>
 						<p><%= newCastData.cast[i].name %></p>
 					<% } %>
 				</div>
+			</div>
 		</div>
 
 		<div class="col-sm-4 movies">
@@ -46,7 +54,6 @@
 					<a href="/movie/<%= newMovieData[i].id%>"><img src="<%= imageBaseUrl + newMovieData[i].poster_path %>" ></a>
 				</div>
 			<% } %>
-		</div>
 		</div>
 	</div>
 
